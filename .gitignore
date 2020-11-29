@@ -1,0 +1,15 @@
+.Rproj.user
+.Rhistory
+.RData
+.*.Rnb.cached
+man/.Rapp.history
+.DS_Store
+
+# Rust
+/target
+Cargo.lock
+
+# C/C++
+*.o
+*.so
+*.a
