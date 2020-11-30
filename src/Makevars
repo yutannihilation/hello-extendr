@@ -1,5 +1,5 @@
-
-LIBDIR = ../target/release
+CRATE = hello
+LIBDIR = $(CRATE)/target/release
 STATLIB = $(LIBDIR)/libhello.a
 PKG_LIBS = -L$(LIBDIR) -lhello
 
@@ -10,7 +10,7 @@ $(SHLIB): $(STATLIB)
 
 $(STATLIB):
 	echo BUILDING STATLIB
-	cargo build --release --manifest-path=../Cargo.toml
+	cargo build --release --manifest-path=$(CRATE)/Cargo.toml
 
 clean:
-	rm -Rf $(SHLIB) $(STATLIB) $(OBJECTS) ../target
+	rm -Rf $(SHLIB) $(STATLIB) $(OBJECTS) $(CRATE)/target

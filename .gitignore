@@ -6,7 +6,7 @@ man/.Rapp.history
 .DS_Store
 
 # Rust
-/target
+src/**/target
 Cargo.lock
 
 # C/C++
