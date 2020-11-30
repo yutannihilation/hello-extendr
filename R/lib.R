@@ -4,3 +4,6 @@ hello <- function() {
 }
 
 
+hello2 <- function() {
+  .Call("wrap__hello2")
+}
